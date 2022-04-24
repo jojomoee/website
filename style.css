@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	background-color: #F1F1F1;
+	display: flex;
+	flex-flow: column;
+}
+
+header {
+	height: 100px;
+	width: 100%;
+}
+
