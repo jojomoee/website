@@ -1,8 +1,11 @@
 
+//call P5 instance mode to set a sketch inside a div, so i can modify div in CSS
+//resizing the window in browser doesnt work, but refr
 let sketch = function(p) {
 	let headerDiv = document.getElementById('header-div');
-	
+	let headerTxt = 'Johannes Möhrl'
 	p.setup = function() {
+	
 		let width = headerDiv.offsetWidth;
 		let height = headerDiv.offsetHeight;
 
@@ -11,8 +14,21 @@ let sketch = function(p) {
 	};
 
 	p.draw = function() {
+		
 		p.background(0);
-		p.fill(255);
+
+		let fontSize = 30;
+		let lineHeight = fontSize * 0.9;
+		let width = headerDiv.offsetWidth;
+		
+		for (let i = 0; i < 100; i ++) {
+
+			p.textSize(20)
+			p.fill(255);
+			p.textAlign(p.LEFT, p.TOP);
+			p.text(headerTxt, -p.frameCount + i * 200, 10);
+
+		}
 	};
 
 	function windowResized() {
