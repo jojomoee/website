@@ -2,7 +2,7 @@
 //call P5 instance mode to set a sketch inside a div, so i can modify div in CSS
 //resizing the window in browser doesnt work, but refr
 let sketch = function(p) {
-	let headerDiv = document.getElementById('header-div');
+	let headerDiv = document.getElementById('header');
 	let headerTxt = 'Johannes Möhrl'
 	p.setup = function() {
 	
@@ -10,7 +10,7 @@ let sketch = function(p) {
 		let height = headerDiv.offsetHeight;
 
 		let render = p.createCanvas(width, height);
-		render.parent('header-div');
+		render.parent('header');
 	};
 
 	p.draw = function() {
@@ -42,4 +42,4 @@ let sketch = function(p) {
 
 };
 
-let myp5 = new p5(sketch, 'header-div');
+let myp5 = new p5(sketch, 'header');
