@@ -1,3 +1,7 @@
+let btn = document.getElementById('nav-btn');
+let landingContainer = document.getElementById('landing-container');
+
 function navFunction() {
-	console.log('work');
+	landingContainer.style.backgroundColor='red';
+	console.log('amankoi');
 }
