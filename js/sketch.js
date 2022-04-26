@@ -13,7 +13,7 @@ let sketch = function (p) {
   p.draw = function () {
     p.background(255);
 
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 10; i++) {
       //when multiple items are used
       //position offset because, the smiley's starts to shift (posX - n) * i < poX * i 
       //let posX = 100;
