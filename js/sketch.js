@@ -21,7 +21,14 @@ let sketch = function (p) {
       //-p.frameCount + (i * (posX - posOffset) + posOffset * i - posOffset),
       smiley(
         p,
-		-p.frameCount * i + (p.width - 40),
+		-p.frameCount * i/10 + (p.width - p.width/2),
+        35,
+        50
+      );
+
+      smiley(
+        p,
+		p.frameCount * i/10 + (p.width - p.width/2),
         35,
         50
       );
