@@ -11,10 +11,12 @@
   <body>
     <div class="container" id="container">
       <section id="header" class="header"></section>
-      <div id="header-container" class="header-container"></div>
+      <div class="header-container">
+        <div id="smiley-container" class="smiley-container"></div>
+        <button class="nav-button" onclick="navFunction()"><a href=""></a></button>
+      </div>
       <section id="main" class="main">
-        <div id="landing-container" class="landing-container">
-        </div>
+        <div id="landing-container" class="landing-container"></div>
         <div id="skills-container" class="main-sub">
           <div id="programming" class="skill"><p>Programming</p></div>
           <div id="design" class="skill"><p>Design</p></div>
@@ -38,8 +40,7 @@
         </ul>
       </section>
     </div>
-
-      <script src="js/main.js"></script>
-	  <script src="js/main2.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sketch.js"></script>
   </body>
 </html>

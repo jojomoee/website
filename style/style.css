@@ -8,26 +8,35 @@
   font-size: 1em;
 }
 
-.header-container {
+.smiley-container {
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   position: fixed;
-  z-index: 1;
+  z-index: -1;
 }
-
+.nav-button {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  border: 0px;
+  height: 8vh;
+  width: 8vh;
+  z-index: 1;
+  background: transparent;
+}
 .main {
+  margin: 0;
+  padding: 0;
   border: solid 2px red;
 }
 
 #landing-container {
   width: 100vw;
+  height: 100vh;
   margin: 0 auto;
   height: 100vh;
-  display: flex;
-  transition: 1s ease;
-  position: fixed;
 }
 
 #skills-container {
