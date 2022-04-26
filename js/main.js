@@ -15,14 +15,14 @@ let sketch = function (p) {
 
     for (let i = 0; i < 100; i++) {
       //when multiple items are used
-      //position offset because, the smiley's starts to shift (posX - n) * i < poX * i
+      //position offset because, the smiley's starts to shift (posX - n) * i < poX * i 
+      //-p.frameCount + (i * (posX - posOffset) + posOffset * i - posOffset),
       let posX = 100;
       let posOffset = 26;
 
       smiley(
         p,
-		//overcomplicated
-        -p.frameCount * i + 700 , 
+		-p.frameCount * i + (p.width - 35),
         30,
         50
       );
