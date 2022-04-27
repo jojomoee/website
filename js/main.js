@@ -2,10 +2,13 @@
 
 
 
-
-// Ich küsse deine Augen https://codesandbox.io/s/create-a-canvas-tightly-holding-a-word-st2h1?file=/src/styles.css&resolutionWidth=320&resolutionHeight=675
+//needs to wait until font is loaded
+setTimeout(function(){	
 createTightTextWithCanvas("number-cnv", { txt: "_Contact", fontface: "Solide-Mirage-Etroit" });
 fitToContainer('number-cnv');
+}, 2000);
+
+// Ich küsse deine Augen https://codesandbox.io/s/create-a-canvas-tightly-holding-a-word-st2h1?file=/src/styles.css&resolutionWidth=320&resolutionHeight=675
 function fitToContainer(canvas){
   // Make it visually fill the positioned parent
   //canvas.style.width ='100%';
