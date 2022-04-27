@@ -1,0 +1,17 @@
+.landing-container {
+  width: 100vw;
+  height: 90vh;
+}
+
+.video-container {
+  margin-left: 8vw;
+  margin-top: 10vh;
+  width: 40vw;
+  height: 40vh;
+}
+
+#iframe-call {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}

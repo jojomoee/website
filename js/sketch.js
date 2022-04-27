@@ -2,6 +2,7 @@
 //resizing the window in browser doesnt work, needs to be refreshed
 let sketch = function (p) {
   let headerDiv = document.getElementById("smiley-container");
+
   p.setup = function () {
     let width = headerDiv.offsetWidth;
     let height = headerDiv.offsetHeight;
@@ -11,29 +12,34 @@ let sketch = function (p) {
   };
 
   p.draw = function () {
-    p.background(255);
-
-    for (let i = 0; i < 10; i++) {
+    p.clear();
+    for (let i = 0; i < 2; i++) {
       //when multiple items are used
-      //position offset because, the smiley's starts to shift (posX - n) * i < poX * i 
+      //position offset because, the smiley's starts to shift (posX - n) * i < poX * i
       //let posX = 100;
       //let posOffset = 26;
       //-p.frameCount + (i * (posX - posOffset) + posOffset * i - posOffset),
-      smiley(
-        p,
-		-p.frameCount * i/10 + (p.width - p.width/2),
-        35,
-        50
-      );
 
-      smiley(
-        p,
-		p.frameCount * i/10 + (p.width - p.width/2),
-        35,
-        50
-      );
+      //let value = p.map(p.sin(p.frameCount / 100), 0, 1, -100, 100);
+      //let value2 = p.map(p.sin(p.frameCount / 200), 0, 1, -100, 100);
+      //console.log(value);
+      //smiley(p, value + (p.width - p.width / 2), 35, 50);
+      //smiley(p, value2 + (p.width - p.width / 2), 35, 50);
+      for (let i = 0; i < 5; i++) {
+        smiley(
+          p,
+          ((-p.frameCount / 2) * i) + p.width + 100,
+          35,
+          50
+        );
+        smiley(
+          p,
+          ((p.frameCount / 2) * i) -100,
+          35,
+          50
+        );
+      }
     }
-
   };
 
   /* I don't know why i wrote this, works without.
@@ -48,12 +54,10 @@ let sketch = function (p) {
 
 let myp5 = new p5(sketch, "smiley-container");
 
-
 function smiley(p, x, y, d) {
   // °
-  p.fill(255, 255, 255);
   p.stroke(0);
-  p.strokeWeight(1);
+  p.strokeWeight(2);
   p.ellipse(x, y, d, d);
 
   // )
@@ -65,7 +69,7 @@ function smiley(p, x, y, d) {
   // :
   let offset = 0.15 * d;
   let eyeD = 0.15 * d;
-  p.strokeWeight(1);
+  p.strokeWeight(2);
   p.noFill();
   p.ellipse(x - offset, y - offset, eyeD, eyeD * 2);
   p.ellipse(x + offset, y - offset, eyeD, eyeD * 2);
