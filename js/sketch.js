@@ -9,7 +9,7 @@ let sketch = function (p) {
 
     let render = p.createCanvas(width, height);
     render.parent("smiley-container");
-    p.pixelDensity(1.5);
+    p.pixelDensity(0.4);
   };
 
   p.draw = function () {
