@@ -1,3 +1,4 @@
+
 .landing-container {
   width: 100vw;
   height: 90vh;
@@ -5,11 +6,10 @@
 
 .video-container {
   position: relative;
-
   margin: 5%;
   margin-bottom: 50%;
-  width: 40vw;
-  height: 40vh;
+  width: 60vw;
+  height: 70vh;
 }
 
 #iframe-call {
@@ -21,7 +21,7 @@
 #number-div {
   position: absolute;	
   width: 100%;
-  top: 0;
+  top: 10%;
   left: 0;
 }
 
@@ -30,7 +30,7 @@
   max-width: 100%;
 }
 
-#email-div {
+/* #email-div {
   position: absolute;	
   width: 100%;
   top: 0;
@@ -43,3 +43,4 @@
   max-width: 100%;
 
 }
+*/

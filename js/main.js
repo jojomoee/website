@@ -3,15 +3,13 @@
 
 
 
-
-
-createTightTextWithCanvas("number-cnv", { txt: "+43 69917190176", fontface: "Arial" });
-createTightTextWithCanvas("email-cnv", { txt: "moehrlj@gmail.com", fontface: "Arial" });
+// Ich küsse deine Augen https://codesandbox.io/s/create-a-canvas-tightly-holding-a-word-st2h1?file=/src/styles.css&resolutionWidth=320&resolutionHeight=675
+createTightTextWithCanvas("number-cnv", { txt: "_Contact", fontface: "Solide-Mirage-Etroit" });
 fitToContainer('number-cnv');
 function fitToContainer(canvas){
   // Make it visually fill the positioned parent
-  canvas.style.width ='100%';
-  canvas.style.height='100%';
+  //canvas.style.width ='100%';
+  //canvas.style.height='100%';
   // ...then set the internal size to match
   canvas.width  = canvas.offsetWidth;
   canvas.height = canvas.offsetHeight;
@@ -27,7 +25,7 @@ function createTightTextWithCanvas(
   {
     txt = "test", // some string
     size = "1200px", // big values = crisper text (you can optimize)
-    color = "white", // color of text
+    color = "red", // color of text
     weight = "normal", // weight of text
     fontface = "arial" // font face of text
   }
