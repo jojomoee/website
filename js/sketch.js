@@ -9,36 +9,25 @@ let sketch = function (p) {
 
     let render = p.createCanvas(width, height);
     render.parent("smiley-container");
+    p.pixelDensity(0.7);
   };
 
   p.draw = function () {
     p.clear();
-    for (let i = 0; i < 2; i++) {
-      //when multiple items are used
-      //position offset because, the smiley's starts to shift (posX - n) * i < poX * i
-      //let posX = 100;
-      //let posOffset = 26;
-      //-p.frameCount + (i * (posX - posOffset) + posOffset * i - posOffset),
+    //when multiple items are used
+    //position offset because, the smiley's starts to shift (posX - n) * i < poX * i
+    //let posX = 100;
+    //let posOffset = 26;
+    //-p.frameCount + (i * (posX - posOffset) + posOffset * i - posOffset),
 
-      //let value = p.map(p.sin(p.frameCount / 100), 0, 1, -100, 100);
-      //let value2 = p.map(p.sin(p.frameCount / 200), 0, 1, -100, 100);
-      //console.log(value);
-      //smiley(p, value + (p.width - p.width / 2), 35, 50);
-      //smiley(p, value2 + (p.width - p.width / 2), 35, 50);
-      for (let i = 0; i < 5; i++) {
-        smiley(
-          p,
-          ((-p.frameCount / 2) * i) + p.width + 100,
-          35,
-          50
-        );
-        smiley(
-          p,
-          ((p.frameCount / 2) * i) -100,
-          35,
-          50
-        );
-      }
+    //let value = p.map(p.sin(p.frameCount / 100), 0, 1, -100, 100);
+    //let value2 = p.map(p.sin(p.frameCount / 200), 0, 1, -100, 100);
+    //console.log(value);
+    //smiley(p, value + (p.width - p.width / 2), 35, 50);
+    //smiley(p, value2 + (p.width - p.width / 2), 35, 50);
+    for (let i = 0; i < 100; i++) {
+      smiley(p, (-p.frameCount / 10) * i + p.width + 100, 35, 50);
+      smiley(p, (p.frameCount / 10) * i - 100, 35, 50);
     }
   };
 
