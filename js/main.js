@@ -3,9 +3,12 @@
 
 
 //needs to wait until font is loaded
+//
+
+
 setTimeout(function(){	
-createTightTextWithCanvas("number-cnv", { txt: "_Contact", fontface: "Solide-Mirage-Etroit" });
-fitToContainer('number-cnv');
+createTightTextWithCanvas("contact-cnv", { txt: "_KontaKtieren", fontface: "Solide-Mirage-Etroit" });
+//fitToContainer('contact-cnv');
 }, 2000);
 
 // Ich küsse deine Augen https://codesandbox.io/s/create-a-canvas-tightly-holding-a-word-st2h1?file=/src/styles.css&resolutionWidth=320&resolutionHeight=675
@@ -28,7 +31,7 @@ function createTightTextWithCanvas(
   {
     txt = "test", // some string
     size = "1200px", // big values = crisper text (you can optimize)
-    color = "red", // color of text
+    color = "orange", // color of text
     weight = "normal", // weight of text
     fontface = "arial" // font face of text
   }

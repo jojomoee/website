@@ -1,4 +1,3 @@
-
 .landing-container {
   width: 100vw;
   height: 90vh;
@@ -7,9 +6,9 @@
 .video-container {
   position: relative;
   margin: 5%;
-  margin-bottom: 50%;
+  margin-bottom: 70%;
   width: 60vw;
-  height: 70vh;
+  height: 80vh;
 }
 
 #iframe-call {
@@ -18,29 +17,36 @@
   border: 0;
 }
 
-#number-div {
-  position: absolute;	
+#contact-div {
+  position: absolute;
   width: 100%;
-  top: 10%;
+  height: 100%;
+  top: 0;
   left: 0;
 }
 
-#number-cnv {
+#contact-cnv {
   background: transparent;
   max-width: 100%;
+  left: 0;
 }
-
-/* #email-div {
-  position: absolute;	
+#overlay {
+  position: absolute;
+  height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  padding-top: 10vw;
+  opacity:0;
+}
+#overlay:hover {
+  max-height: 100%;
+  background: orange;
+  opacity:1;
+
 }
 
-#email-cnv {
-  background: transparent;
-  max-width: 100%;
-
+@media screen and (min-width: 1300px) {
+  .video-container {
+    width: 50vw;
+  }
 }
-*/

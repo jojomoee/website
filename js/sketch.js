@@ -9,7 +9,7 @@ let sketch = function (p) {
 
     let render = p.createCanvas(width, height);
     render.parent("smiley-container");
-    p.pixelDensity(0.4);
+    p.pixelDensity(3);
   };
 
   p.draw = function () {
@@ -25,8 +25,9 @@ let sketch = function (p) {
     //console.log(value);
     //smiley(p, value + (p.width - p.width / 2), 35, 50);
     //smiley(p, value2 + (p.width - p.width / 2), 35, 50);
-    for (let i = 0; i < 100; i++) {
-      smiley(p, (-p.frameCount / 10) * i + p.width + 100, 100 + i*2, 50 + i * 100 );
+    for (let i = 0; i < 10; i++) {
+      smiley(p, (-p.frameCount / 2) * i + p.width + 100,400 +i*20, 50 + i * 1000 );
+      smiley(p, (p.frameCount / 2) * i + p.width + 100,400 +i*20, 50 + i * 1000 );
     }
   };
 
