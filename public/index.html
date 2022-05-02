@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="height=device-height, initial-scale=1.0" />
+    <title>Johannes Möhrl</title>
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <!-- Deployement (min) -->
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+      integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Development -->
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"
+      integrity="sha512-4P0ZJ49OMXe3jXT+EsEaq82eNwFeyYL81LeHGzGcEhowFbTqeQ80q+NEkgsE8tHPs6aCqvi7U+XWliAjDmT5Lg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="landing-container" class="landing-container">
+
+        <div id="about-container" class="vid-container">
+          <iframe
+            scrolling="no"
+            src="stylesheets/assets/media/mesh.webp"
+          ></iframe>
+          <div id="about-text" class="vid-txt">
+            <canvas id="about-cnv"></canvas>
+          </div>
+          <div id="about-onclick">
+            <div id="about-onclick-text">
+              <p>TO-DO</p>
+            </div>
+          </div>
+        </div>
+
+    	<div id="more-container" class="vid-container">
+          <iframe
+            scrolling="no"
+            src="stylesheets/assets/media/mesh2.webp"
+          ></iframe>
+          <div id="more-text" class="vid-txt">
+            <canvas id="more-cnv"></canvas>
+          </div>
+          <div id="more-onclick">
+            <div id="more-onclick-text">
+              <p>TO-DO</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="skills-container" class="main-sub">
+        <div id="programming" class="skill"><p>Programming</p></div>
+        <div id="design" class="skill"><p>Design</p></div>
+      </div>
+
+      <div id="stuff-container" class="main-sub">
+        <div id="photo" class="about"><p>PHOTO</p></div>
+        <div id="photo-txt" class="about-txt">Here is a Photo of me</div>
+        <div id="drawing" class="about"><p>DRAWING</p></div>
+        <div id="drawing-txt-about" class="about-txt"></div>
+        <div id="animation" class="about"><p>ANIMATION</p></div>
+        <div id="animation-txt" class="about-txt">Here is a Photo of me</div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <ul>
+        <li>Kontakt</li>
+        <li>Github</li>
+      </ul>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/sketch.js"></script>
+  </body>
+</html>

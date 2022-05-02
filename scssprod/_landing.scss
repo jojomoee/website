@@ -1,0 +1,12 @@
+@import '_variables.scss';
+
+.vid-container {
+	width:50vw;
+	height:50vh;
+
+}
+iframe {
+	height: 100%;
+	width: 100%;
+	border: 0;
+}
