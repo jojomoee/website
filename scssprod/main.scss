@@ -1,0 +1,11 @@
+@import './variables';
+@import './landing';
+
+body {
+	background-color: $black;
+	font-family: SolideMirage-Etroit;
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+
+}

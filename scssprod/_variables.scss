@@ -1,0 +1,16 @@
+
+
+//COLORS
+$black: #0f0f0f;
+$white: #f0f0f0;
+
+
+//FONTS
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+	src: url($file + '.eot');
+	src: url($file + '.woff') format('woff'), url($file + '.woff2') format('woff2'),  url($file + '.woff') format('woff'),url($file + '.ttf') format('truetype'), url($file + '.svg') format('svg');
+  }
+}
+@include font-face('SolideMirage-Etroit', './assets/fonts/SolideMirage-Etroit');
