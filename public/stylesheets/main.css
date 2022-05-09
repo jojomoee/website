@@ -9,15 +9,18 @@
   src: url("./assets/fonts/SolideMirage-Etroit.woff") format("woff"), url("./assets/fonts/SolideMirage-Etroit.woff2") format("woff2"), url("./assets/fonts/SolideMirage-Etroit.woff") format("woff"), url("./assets/fonts/SolideMirage-Etroit.ttf") format("truetype"), url("./assets/fonts/SolideMirage-Etroit.svg") format("svg");
 }
 #landing-container {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .vid-container {
   position: relative;
-  width: 50vw;
-  height: 50vh;
+  margin: 2vh;
+  width: 46vw;
+  height: 46vh;
 }
 .vid-container .vid-txt {
   position: absolute;
@@ -31,10 +34,19 @@
   max-width: 100%;
   left: 0;
 }
+.vid-container #more-cnv {
+  background: transparent;
+  max-width: 100%;
+  left: 0;
+}
 .vid-container iframe {
   height: 100%;
   width: 100%;
   border: 0;
+}
+
+#more-container {
+  margin-top: 52vh;
 }
 
 body {
