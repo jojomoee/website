@@ -4,7 +4,8 @@
 
 
 setTimeout(function(){	
-createTightTextWithCanvas("about-cnv", { txt: "_icH, iCH", fontface: "SolideMirage-Etroit" });
+createTightTextWithCanvas("about-cnv", { txt: "CV", fontface: "SolideMirage-Etroit" });
+createTightTextWithCanvas("more-cnv", { txt: "PORTFOLIO", fontface: "SolideMirage-Etroit" });
 //fitToContainer('about-cnv');
 }, 2000);
 
