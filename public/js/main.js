@@ -29,7 +29,7 @@ function createTightTextWithCanvas(
   {
     txt = "test", // some string
     size = "1200px", // big values = crisper text (you can optimize)
-    color = "orange", // color of text
+    color = "#0f0f0f", // color of text
     weight = "normal", // weight of text
     fontface = "arial" // font face of text
   }
